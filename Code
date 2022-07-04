@@ -1,0 +1,25 @@
+print('-----------1st Question------------')
+
+def flatten(l):
+
+    for i in l:
+        if isinstance(i, list):
+            flatten(i)
+        else:
+            new.append(i)
+    return new
+
+l0 = [[1, 'a', ['cat'], 2], [[[3]], 'dog'], 4, 5]
+
+new = []
+flatten(l0)
+print(new)
+
+
+print('-----------2nd Question------------')
+
+l1=[[1, 2], [3, 4], [5, 6, 7]]
+l2=l1[::-1]
+for i in range(len(l1)):
+    l2[i]=l2[i][::-1]
+print(l2)
